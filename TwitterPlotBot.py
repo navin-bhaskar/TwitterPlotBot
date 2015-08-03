@@ -166,9 +166,9 @@ def main():
     #plotter.begin()
     stopEvent = threading.Event()
     
-    tweeter = TwitterPlotBot('pjz008viq7bencBFVCiOSh16c', 'drzFh9QvXE8P2pY11sUlmcutsScGyTE7Q3FyviL4DrtyptUlcY',
-                             '2907003553-xy8lD41g932SfD4ACPCNerdA3EN2TAa93mCSDDK', 
-                             '08Lj35uwOGD4ykwamsv6SeZAB3ZBqGyL5vvRQkUAOIZgH',
+    tweeter = TwitterPlotBot('api/app key', 'api/app secret',
+                             'access key', 
+                             'access secret',
                              '#pause', '#resume', plotter, stopEvent, '@navin_bhaskar', 500, False)
     time.sleep(120)
     print "Plotting..."
