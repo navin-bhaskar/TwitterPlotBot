@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Start with clean slate
-rm -rf gnuplot* > /dev/null 2>&1 # Suprees errors
+rm -rf gnuplot* > /dev/null 2>&1 # Supress errors
 rm -rf zlib* > /dev/null 2>&1
 rm -rf libpng* > /dev/null 2>&1
 rm -rf libgd* > /dev/null 2>&1
