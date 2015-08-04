@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+# Note: Set the correct time with date command using
+# "date" ex "date -s "4 AUG 2015 22:55:00" 
+# If you run this script without setting the date on Galileo,
+# the https URL fetchs will fail
+ 
 # Start with clean slate
 rm -rf gnuplot* > /dev/null 2>&1 # Supress errors
 rm -rf zlib* > /dev/null 2>&1
