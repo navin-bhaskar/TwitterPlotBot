@@ -4,7 +4,11 @@
 # "date" ex "date -s "4 AUG 2015 22:55:00" 
 # If you run this script without setting the date on Galileo,
 # the https URL fetchs will fail
- 
+
+echo "Please make sure that you have set the correct date using \"date\" command"
+echo "If not, hit ctrl-c now and set the date and run this script again "
+sleep 5 
+
 # Start with clean slate
 rm -rf gnuplot* > /dev/null 2>&1 # Supress errors
 rm -rf zlib* > /dev/null 2>&1
