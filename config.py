@@ -4,7 +4,6 @@
 config = {
     "Tweet Interval": 60*60,  # Tweet interval in seconds; 60*60 makes it one hour
     "Log Interval": 60*5,     # Data logging interval in seconds 60*5 makes it 5 minutes 
-    "Twitter handle": "@your screen name", # Tweet handle to be used while tweeting
     "xlabel":"Time",   # X label
     "ylabel":"Data",   # Y axis label
     "title": "Plot FTW", # Title of the plot
@@ -14,7 +13,7 @@ config = {
     "access token secret": 'access token secret here',
     "stop plot cmd": "#stoptheplot",
     "resume plot cmd": "#resumeplot",
-    "screen id": "@navin_bhaskar",
+    "screen id": "@your screen name",
     "output file": "out.png",
     "samples": 10,
     }
