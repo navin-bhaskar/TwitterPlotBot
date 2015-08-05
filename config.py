@@ -2,8 +2,8 @@
 # This is the configuaraion file 
 
 config = {
-    "Tweet Interval": 60*2,  # Tweet interval in seconds; 60*60 makes it one hour
-    "Log Interval": 60,     # Data logging interval in seconds 60*5 makes it 5 minutes 
+    "Tweet Interval": 60*60,  # Tweet interval in seconds; 60*60 makes it one hour
+    "Log Interval": 60*5,     # Data logging interval in seconds 60*5 makes it 5 minutes 
     "Twitter handle": "@your screen name", # Tweet handle to be used while tweeting
     "xlabel":"Time",   # X label
     "ylabel":"Data",   # Y axis label
