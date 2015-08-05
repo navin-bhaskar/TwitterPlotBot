@@ -142,8 +142,9 @@ class TwitterPlotBot(Thread):
                 # Get the personal message from the master
                 try:
                     msgs = self.twitter.get_direct_messages(screen_id = self.targetHandle, count=10)
-                except:
+                except Exception, ex:
                     print "Could not receive direct messages "
+                    print str(ex)
                     self.keepTweeting = True
                     continue
                     
