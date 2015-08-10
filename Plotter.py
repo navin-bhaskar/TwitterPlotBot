@@ -142,6 +142,10 @@ class Plotter:
                 temp = plotItem.itemCb()
             except Exception as ex:
                 raise ex # "One of the call back function has failed "
+
+            if (type(temp) != type(1) or type(temp) != type(1.1)):
+                raise ValueError, "The function %s should return an int or a float type"  %plotItem.itemCb.__name__
+
             dataList.append(temp)
 
         # Return the data list that we have to the logger
@@ -242,7 +246,7 @@ def main():
 
 from random import randint
 def dataSource1():
-    return randint(0,9)
+    return "" #randint(0,9)
 
 def dataSource2():
     return randint(0,20)
