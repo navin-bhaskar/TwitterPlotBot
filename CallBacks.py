@@ -22,7 +22,7 @@ def getPotVltg():
 callbacks = [
     # The data item name   The callback func    The color in the plot for this item
     [   'Temperature',      getTemperature,                "#FF2050"],
-    [   'Pot vltg',         getPotVltg,                    "#2F3055"],
+    #[   'Pot vltg',         getPotVltg,                    "#2F3055"],
     
     
     ]
