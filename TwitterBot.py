@@ -36,13 +36,16 @@ import CallBacks
 import time
 import threading
 import signal
+import sys
 
 stopEvent = threading.Event()
 
+plotter = None
 # Define the exit handler
 def signalHandler(signal, frame):
         print('Exiting.....')
         stopEvent.set()
+	plotter.stop()
         time.sleep(10)
         sys.exit(0)
         
@@ -52,6 +55,7 @@ signal.signal(signal.SIGINT, signalHandler)
 def main():
     """ This is the enrty point for our application,
     "TwitterBot" """
+    global plotter
     plotter = Plotter(config.config["output file"], # The output file name
                       config.config["title"],  # Title of the plot
                       config.config["xlabel"], # X axis label
