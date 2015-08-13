@@ -179,7 +179,11 @@ class TwitterPlotBot(Thread):
                 if os.path.exists(self.plotter.getOutPutFileName()):
                     print "Tweeting........."
                     tweet = self.targetHandle + ' ' + tweetStrs[randint(0, len(tweetStrs)-1)]
-                    self.__tweetPlot__(tweet)
+                    try:
+                    	self.__tweetPlot__(tweet)
+                    except:
+                        print "Error while tweeting...."
+                        pass
             else:
                 print "Not tweeting this cycle..."
             
